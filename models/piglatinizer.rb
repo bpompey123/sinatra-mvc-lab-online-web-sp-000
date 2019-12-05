@@ -2,9 +2,9 @@ class PigLatinizer
 
   attr_accessor :text
 
-  def initialize(text)
-    @text = text
-  end
+#  def initialize(text)
+#    @text = text
+#  end
 
   def translate(string)
     vowels = ["a","e","i","o","u"]

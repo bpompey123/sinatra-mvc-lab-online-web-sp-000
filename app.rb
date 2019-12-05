@@ -10,7 +10,7 @@ class App < Sinatra::Base
 
     user_word = params["phrase"]
     word = PigLatinizer.new
-    @pig_latinized_word = word.to_pig_latin(user_word)
+    @pig_latinized_word = word.translate(user_word)
 
     erb :piglatinize
   end
